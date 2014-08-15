@@ -14,9 +14,4 @@ defined('ABSPATH') or die("No script kiddies please!");
 include_once 'post-type-registration.php';
 include_once 'user-profile-extension.php';
 include_once 'functions.php';
-
-add_shortcode('test', 'dump_players');
-
-function dump_players(){
-    var_dump( cf_cm_get_all_players() );
-}
+include_once 'shortcodes.php';
