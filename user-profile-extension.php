@@ -6,3 +6,4 @@ add_action( 'edit_user_profile', array($user_profile, 'show_extra_profile_fields
 add_action( 'show_user_profile', array( $user_profile, 'show_extra_profile_fields' ) );
 
 add_action( 'edit_user_profile_update', array( $user_profile, 'save_extra_profile_fields' ) );
+add_action( 'personal_options_update', array( $user_profile, 'save_extra_profile_fields' ) );

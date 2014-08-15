@@ -55,10 +55,9 @@ class User_Profile {
     }
 
     function save_extra_profile_fields( $user_id ) {
-
         if ( ! current_user_can( 'edit_users' ) )
             return false;
 
-        update_user_meta( $user_id, 'rank', $_POST['rank']);
+        update_user_meta( $user_id, 'rank', $_POST['rank']) ;
     }
 } 
