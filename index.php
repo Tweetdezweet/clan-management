@@ -8,3 +8,8 @@
  * Author URI: http://www.koengabriels.be
  * License: GPL2
  */
+
+defined('ABSPATH') or die("No script kiddies please!");
+
+include_once 'post-type-registration.php';
+
