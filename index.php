@@ -12,4 +12,4 @@
 defined('ABSPATH') or die("No script kiddies please!");
 
 include_once 'post-type-registration.php';
-
+include_once 'user-profile-extension.php';
