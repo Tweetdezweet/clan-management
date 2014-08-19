@@ -13,10 +13,9 @@ class Shortcode {
 
     public function show_roster(){
         if( file_exists( get_stylesheet_directory() . '/clan-management/views/frontend/roster_shortcode.php' ) ) {
-            $output = include_once get_stylesheet_directory() . '/clan-management/views/frontend/roster_shortcode.php';
+            include_once get_stylesheet_directory() . '/clan-management/views/frontend/roster_shortcode.php';
         } else {
-            $output = include_once __DIR__ . '/../views/frontend/roster_shortcode.php';
+            include_once __DIR__ . '/../views/frontend/roster_shortcode.php';
         }
-        echo $output;
     }
 }
