@@ -36,13 +36,13 @@ class User_Profile {
                     <?php else: ?>
                     <select name="rank" id="rank">
                         <?php
-                            $selected = '' == $user_rank ? 'selected' : '';
-                            echo sprintf('<option value="norank" selected="%s">Choose a rank</option>', $selected);
+                            $selected = '' == $user_rank ? 'selected="selected"' : '';
+                            echo sprintf('<option value="norank" %s>Choose a rank</option>', $selected);
                         ?>
 
                         <?php foreach($available_ranks as $rank) {
-                            $selected = $rank->ID == $user_rank ? 'selected' : '';
-                            echo sprintf('<option value="%s" selected="%s" >%s</option>', $rank->ID, $selected, $rank->post_title);
+                            $selected = $rank->ID == $user_rank ? 'selected="selected"' : '';
+                            echo sprintf('<option value="%s" %s >%s</option>', $rank->ID, $selected, $rank->post_title);
                         } ?>
                     </select>
                     <span class="description">Please enter the rank of the user.</span>
